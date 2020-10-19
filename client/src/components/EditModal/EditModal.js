@@ -34,7 +34,7 @@ const EditModal = props => {
         });
     }
 
-    const editCarro = () => {
+    const editCarro = (cd) => {
         axios
             .post('/api/public/edit', {
             id: props.data._id,
